@@ -1,0 +1,113 @@
+# Mac security audit (7 October 2026)
+
+Local triage only. No malware confirmed; no complete antivirus scan performed. Email authenticity not verified without original headers. (7 October 2026)
+
+## sw_vers (7 October 2026)
+```
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+
+```
+
+## csrutil status (7 October 2026)
+```
+System Integrity Protection status: disabled.
+
+```
+
+## csrutil authenticated-root status (7 October 2026)
+```
+Authenticated Root status: enabled
+
+```
+
+## spctl --status (7 October 2026)
+```
+assessments enabled
+
+```
+
+## fdesetup status (7 October 2026)
+```
+FileVault is On.
+
+```
+
+## /usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate (7 October 2026)
+```
+Firewall is disabled. (State = 0)
+
+```
+
+## /usr/bin/xprotect status (7 October 2026)
+```
+XProtect launch scans: disabled
+XProtect background scans: enabled
+
+```
+
+## /usr/bin/xprotect version (7 October 2026)
+```
+Version: 5366 Installed: 2026-10-06 19:31:37 +0000
+
+```
+
+## profiles status -type enrollment (7 October 2026)
+```
+Enrolled via DEP: No
+MDM enrollment: No
+
+```
+
+## systemextensionsctl list (7 October 2026)
+```
+1 extension(s)
+--- com.apple.system_extension.cmio (Go to 'System Settings > General > Login Items & Extensions > Camera Extensions' to modify these system extension(s))
+enabled	active	teamID	bundleID (version)	name	[state]
+*	*	2MMRE5MTB8	com.obsproject.obs-studio.mac-camera-extension (32.1.2/24742303888)	OBS Virtual Camera	[activated enabled]
+
+```
+
+## Findings and actions (7 October 2026)
+- SIP disabled; restore using csrutil enable in macOS Recovery, then verify csrutil status. This is a protection weakness, not proof of malware. (7 October 2026)
+- Firewall disabled. Enabling failed because administrator authentication is required. It filters inbound traffic and does not stop an infostealer from uploading secrets. (7 October 2026)
+- XProtect launch scans disabled; background scans enabled, version 5366 installed 6 October 2026. Cause of disabled launch scans remains unverified. (7 October 2026)
+- Software Update reports no new software available. Gatekeeper and FileVault active; authenticated root active. (7 October 2026)
+- 58 installed Chrome extension directories. Coupert, VeePN, Get cookies.txt LOCALLY and Tampermonkey have cookies permissions; VPN Japan has proxy and all-site access. This does not establish malicious behavior or that they are currently enabled. Review and remove unneeded extensions after evidence preservation. (7 October 2026)
+- CrossOver, Font Book, ClaudeSync and local ZenRay utilities have ad-hoc signatures. DAVE THE DIVER and Disco Elysium app wrappers unsigned. Signatures alone cannot establish infection; locally patched apps must be distinguished from unknown downloads. (7 October 2026)
+- System launch binaries show expected vendor signing identities. Shell/Node launchers do not authenticate scripts they execute. No confirmed malicious persistence found in checked locations. (7 October 2026)
+- TCC permissions database inaccessible. Full Disk Access and privileged areas not completely inspected. XProtect log keyword search found no confirmed detection; absence of log evidence cannot clear this Mac. (7 October 2026)
+- Download official Malwarebytes installer, verify pkg signature, install with administrator authentication, grant required permissions and run scan. Quarantine confirmed findings, retain report and rescan after restart. (7 October 2026)
+- From a trusted device secure primary email, revoke sessions and enable MFA; then Claude, password manager, Apple/Google, financial and developer/cloud accounts. Revoke API tokens and assess SSH keys that were locally accessible. Previously stolen cookies survive local cleanup. (7 October 2026)
+- If a stealer is confirmed or confidence cannot be restored, preserve documents and forensic findings then erase and reinstall macOS from Recovery; reinstall apps from official sources instead of restoring all apps, launchers and browser profiles. Requires a verified backup and explicit destructive-action approval. (7 October 2026)
+- Other devices used for Claude remain outside this Mac audit. (7 October 2026)
+
+## Official references (7 October 2026)
+- https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web (7 October 2026)
+- https://support.apple.com/en-ca/102149 (7 October 2026)
+- https://help.malwarebytes.com/hc/en-us/articles/31589208690715-Install-Malwarebytes-for-Mac (7 October 2026)
+
+## Deeper investigation (7 October 2026)
+- User confirms this Mac is the only computer used for this Claude account. (7 October 2026)
+- Malwarebytes scan at 08:44: 111227 items, duration 22 seconds, zero threats, zero PUPs, zero ignored and quarantined detections. Real-time protection shows Active. This does not exclude historical or undetected credential theft. (7 October 2026)
+- Claude.app and Google Chrome.app pass codesign --verify --deep --strict. CrossOver.app, ClaudeSync.app and local Font Book.app also pass signature integrity checks, although the latter three carry ad-hoc signatures. (7 October 2026)
+- Launch scripts and shell startup files examined; no credential harvesting marker identified in inspected scripts. Windows Run registry entries examined in 13 CrossOver bottles: only Steam entry found. (7 October 2026)
+- Chrome History read in immutable read-only mode: recent uncheckpointed WAL events may be omitted. Download origins retrieved without query strings. Shell history contains two download-to-shell commands, origins astral.sh and code.kimi.com; no known protection-disable command found. (7 October 2026)
+- Archive member names in three ZIP files checked: no executable/script suffix among the screened types. No extracted cookies export found in Downloads/Desktop/bottle filename search. (7 October 2026)
+- Chrome extension preferences show Coupert and VeePN have disable reasons; installed-directory count is not enabled-extension count. Do not attribute compromise based on cookie permission alone. (7 October 2026)
+- ClamAV 1.5.4 installed from Homebrew core; daily database 28146 with 355728 signatures, main database 63 with 3287027 signatures and bytecode 339 with 80 signatures. Daily digital signature verifies OK. Initial NULL X509 store messages resolved by setting CVDCertsDirectory; subsequent update clean. (7 October 2026)
+- Second-engine targeted scan running on 1402 CrossOver files (5066160404 bytes) and 100 Mac app/startup targets. File scan limits 512 MiB per file, 1024 MiB per scan; Windows system directories omitted. (7 October 2026)
+- Alert email not found through connected Gmail search. Original sender authentication and incident timestamp remain unverified; no support message sent. A separate recent account suspension was found, but relation to this alert is unproven. (7 October 2026)
+
+## Detection verification (7 October 2026)
+- ClamAV flags Steam Windows cef.win7x64/libcef.dll and cef.win64/libcef.dll as Win.Packed.Mikey-9859574-0. No automatic deletion, whitelist or quarantine applied. (7 October 2026)
+- Authenticode verified with osslsigncode 2.14 against /etc/ssl/cert.pem: both files signed by Valve Corp., valid digests, trusted timestamp, certificate chain and CRL checks; return code 0. Detailed logs saved beside this report. (7 October 2026)
+- cef.win7x64 SHA256 45927f2baff5479aef1513af2fa7311a84a27d71b4bf72b47556824408385874; size 219859096 bytes; CRC32 3883597792 matches local Steam manifest. (7 October 2026)
+- cef.win64 SHA256 c85bf94462b3c79baeac63823db52d15e116eead71ea414e5d3a112c59e434d3; size 219859608 bytes; CRC32 1553093920 matches local Steam manifest. (7 October 2026)
+- Inference: strong evidence these detections are false positives on Valve-signed Chromium libraries, not demonstrated session stealers. Same signature reported on upstream Electron 31.0.1: https://github.com/electron/electron/issues/43180 . The upstream report is supporting context, not proof for these exact hashes. (7 October 2026)
+- Mac ClamAV target scan: 99 files, zero detections, one access error. Explicit readability check identifies sole inaccessible target as /Library/Logs/com.sidefx.com/sesinetd.log, a license-server log included from launch arguments; it is not an executable. (7 October 2026)
+- GitHub claude-sync and Memory repositories verified PRIVATE through gh repo view. No Claude session or API key matching screened patterns found in inspected claude-sync JSONL files below 15 MB. This bounded check does not establish all logs are secret-free. (7 October 2026)
+
+## Completed second-engine scan (7 October 2026)
+- All 1402 CrossOver targets scanned in four groups; two detections, both Valve-signed libcef.dll files examined above. Three groups exit 0, flagged group exit 1; no scan errors reported in CrossOver groups. Mac targets: 99 scanned, no detections, one inaccessible SideFX log. ScanSummary.json preserves counts and detections. Root cause remains unproven; next discriminating evidence is original alert headers and Anthropic incident timestamp/session details. (7 October 2026)

@@ -1,0 +1,44 @@
+{
+  "date": "7 October 2026",
+  "scans": [
+    {
+      "log": "ClamScan00.log",
+      "Scanned files": 351,
+      "Infected files": 0,
+      "Total errors": 0,
+      "detections": []
+    },
+    {
+      "log": "ClamScan01.log",
+      "Scanned files": 351,
+      "Infected files": 2,
+      "Total errors": 0,
+      "detections": [
+        "/Users/zenray/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/bin/cef/cef.win7x64/libcef.dll: Win.Packed.Mikey-9859574-0 FOUND",
+        "/Users/zenray/Library/Application Support/CrossOver/Bottles/Steam/drive_c/Program Files (x86)/Steam/bin/cef/cef.win64/libcef.dll: Win.Packed.Mikey-9859574-0 FOUND"
+      ]
+    },
+    {
+      "log": "ClamScan02.log",
+      "Scanned files": 350,
+      "Infected files": 0,
+      "Total errors": 0,
+      "detections": []
+    },
+    {
+      "log": "ClamScan03.log",
+      "Scanned files": 350,
+      "Infected files": 0,
+      "Total errors": 0,
+      "detections": []
+    },
+    {
+      "log": "ClamScanMac.log",
+      "Scanned files": 99,
+      "Infected files": 0,
+      "Total errors": 1,
+      "detections": []
+    }
+  ],
+  "classification": "Two probable false positives verified as authentic Valve-signed files; infection and origin not proven."
+}

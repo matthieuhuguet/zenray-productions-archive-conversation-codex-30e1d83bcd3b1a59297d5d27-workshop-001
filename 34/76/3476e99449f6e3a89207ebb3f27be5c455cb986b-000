@@ -1,0 +1,160 @@
+PE checksum   : 0D1AE9BD
+
+Signature Index: 0  (Primary Signature)
+
+Message digest algorithm  : SHA256
+Current message digest    : 45CF77719B0062D1F002ABF25812E7D5440CBCCF0BCA8DDAF9FB48C681385E1A 
+Calculated message digest : 45CF77719B0062D1F002ABF25812E7D5440CBCCF0BCA8DDAF9FB48C681385E1A 
+
+Signer's certificate:
+	------------------
+	Signer #0:
+		Subject: CN=Valve Corp.,O=Valve Corp.,L=Bellevue,ST=Washington,C=US
+		Issuer : CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,O=DigiCert\, Inc.,C=US
+		Serial : 06FB83D0BA7C64B957849B76A8C1DE72
+		Certificate expiration date:
+			notBefore : Oct 12 00:00:00 2024 GMT
+			notAfter : Oct  8 23:59:59 2027 GMT
+
+Message digest algorithm: SHA256
+
+Authenticated attributes:
+	Message digest: DA4E605593BAFDA69CE1539135E9C1B5DD18D87FB36B1801D6E6366BF328A800 
+
+Countersignatures:
+	Timestamp time: Nov  5 22:31:53 2025 GMT
+	Signing time: Nov  5 22:31:53 2025 GMT
+	Hash Algorithm: sha256
+	Issuer: CN=DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1,O=DigiCert\, Inc.,C=US
+	Serial: 0A80EF184B8DF10582D1C476A7957468
+
+CAfile: /etc/ssl/cert.pem
+TSA's certificates file: /etc/ssl/cert.pem
+
+Timestamp verified using:
+	------------------
+	Signer #2:
+		Subject: CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 059B1B579E8E2132E23907BDA777755C
+		Certificate expiration date:
+			notBefore : Aug  1 12:00:00 2013 GMT
+			notAfter : Jan 15 12:00:00 2038 GMT
+
+	------------------
+	Signer #1:
+		Subject: CN=DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 0DC7AC5705FF21992E4043220C3A4986
+		Certificate expiration date:
+			notBefore : May  7 00:00:00 2025 GMT
+			notAfter : Jan 14 23:59:59 2038 GMT
+
+	------------------
+	Signer #0:
+		Subject: CN=DigiCert SHA256 RSA4096 Timestamp Responder 2025 1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1,O=DigiCert\, Inc.,C=US
+		Serial : 0A80EF184B8DF10582D1C476A7957468
+		Certificate expiration date:
+			notBefore : Jun  4 00:00:00 2025 GMT
+			notAfter : Sep  3 23:59:59 2036 GMT
+
+TSA's CRL distribution point: http://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl
+Connecting to http://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl
+
+Certificate Revocation List verified using:
+	------------------
+	Signer #2:
+		Subject: CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 059B1B579E8E2132E23907BDA777755C
+		Certificate expiration date:
+			notBefore : Aug  1 12:00:00 2013 GMT
+			notAfter : Jan 15 12:00:00 2038 GMT
+
+	------------------
+	Signer #1:
+		Subject: CN=DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 0DC7AC5705FF21992E4043220C3A4986
+		Certificate expiration date:
+			notBefore : May  7 00:00:00 2025 GMT
+			notAfter : Jan 14 23:59:59 2038 GMT
+
+	------------------
+	Signer #0:
+		Subject: CN=DigiCert SHA256 RSA4096 Timestamp Responder 2025 1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1,O=DigiCert\, Inc.,C=US
+		Serial : 0A80EF184B8DF10582D1C476A7957468
+		Certificate expiration date:
+			notBefore : Jun  4 00:00:00 2025 GMT
+			notAfter : Sep  3 23:59:59 2036 GMT
+
+Timestamp Server Signature CRL verification: ok
+
+Timestamp Server Signature verification: ok
+Signature verification time: Nov  5 22:31:53 2025 GMT
+Signing certificate chain verified using:
+	------------------
+	Signer #2:
+		Subject: CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 059B1B579E8E2132E23907BDA777755C
+		Certificate expiration date:
+			notBefore : Aug  1 12:00:00 2013 GMT
+			notAfter : Jan 15 12:00:00 2038 GMT
+
+	------------------
+	Signer #1:
+		Subject: CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 08AD40B260D29C4C9F5ECDA9BD93AED9
+		Certificate expiration date:
+			notBefore : Apr 29 00:00:00 2021 GMT
+			notAfter : Apr 28 23:59:59 2036 GMT
+
+	------------------
+	Signer #0:
+		Subject: CN=Valve Corp.,O=Valve Corp.,L=Bellevue,ST=Washington,C=US
+		Issuer : CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,O=DigiCert\, Inc.,C=US
+		Serial : 06FB83D0BA7C64B957849B76A8C1DE72
+		Certificate expiration date:
+			notBefore : Oct 12 00:00:00 2024 GMT
+			notAfter : Oct  8 23:59:59 2027 GMT
+
+CRL distribution point: http://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl
+Connecting to http://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl
+
+Certificate Revocation List verified using:
+	------------------
+	Signer #2:
+		Subject: CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 059B1B579E8E2132E23907BDA777755C
+		Certificate expiration date:
+			notBefore : Aug  1 12:00:00 2013 GMT
+			notAfter : Jan 15 12:00:00 2038 GMT
+
+	------------------
+	Signer #1:
+		Subject: CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,O=DigiCert\, Inc.,C=US
+		Issuer : CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US
+		Serial : 08AD40B260D29C4C9F5ECDA9BD93AED9
+		Certificate expiration date:
+			notBefore : Apr 29 00:00:00 2021 GMT
+			notAfter : Apr 28 23:59:59 2036 GMT
+
+	------------------
+	Signer #0:
+		Subject: CN=Valve Corp.,O=Valve Corp.,L=Bellevue,ST=Washington,C=US
+		Issuer : CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,O=DigiCert\, Inc.,C=US
+		Serial : 06FB83D0BA7C64B957849B76A8C1DE72
+		Certificate expiration date:
+			notBefore : Oct 12 00:00:00 2024 GMT
+			notAfter : Oct  8 23:59:59 2027 GMT
+
+Signature CRL verification: ok
+Signature verification: ok
+
+Number of verified signatures: 1
+Succeeded

@@ -1,0 +1,7 @@
+# Incident attribution questions (7 October 2026)
+
+Prepared for account owner review; not sent. (7 October 2026)
+
+Please confirm the exact date and time in UTC of the suspicious activity, the affected session type (web, desktop or Claude Code), and any available operating system or device details. Was the evidence a reused session from an unfamiliar IP, a credential found in a stealer dataset, or another signal? If available, please provide the earliest compromise timestamp, source malware family and indicators of compromise. Please also confirm whether the account experienced unauthorized messages, exports, billing changes or additional usage, and whether all affected sessions have been revoked. (7 October 2026)
+
+These details are necessary to correlate local evidence; a clean current scan cannot identify a past infection by itself. No passwords, session cookies or tokens should be included in the support request. (7 October 2026)

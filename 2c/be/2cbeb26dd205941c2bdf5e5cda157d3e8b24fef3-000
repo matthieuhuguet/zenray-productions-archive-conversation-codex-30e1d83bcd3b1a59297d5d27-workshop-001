@@ -1,0 +1,24 @@
+# 7 October 2026: Read-only targeted scan; never remove or quarantine automatically.
+import concurrent.futures
+import pathlib
+import subprocess
+
+WORKSHOP = pathlib.Path(__file__).resolve().parent.parent
+DATABASE = pathlib.Path.home() / "Library/Caches/ZenRaySecurityAudit/clamav"
+SCANNER = "/opt/homebrew/bin/clamscan"
+WORKERS = 4
+TARGETS = (WORKSHOP / "CrossOverScanTargets.txt").read_text().splitlines()
+
+def scan_group(index):
+    target_file = WORKSHOP / f"ScanTargets{index:02d}.txt"
+    log_file = WORKSHOP / f"ClamScan{index:02d}.log"
+    target_file.write_text("\n".join(TARGETS[index::WORKERS]) + "\n")
+    args = [SCANNER, "--database=" + str(DATABASE), "--cvdcertsdir=/opt/homebrew/etc/clamav/certs", "--file-list=" + str(target_file), "--infected", "--max-filesize=512M", "--max-scansize=1024M", "--log=" + str(log_file)]
+    result = subprocess.run(args, capture_output=True, text=True)
+    print(f"GROUP {index}: exit={result.returncode}\n{result.stdout}\n{result.stderr}", flush=True)
+    return result.returncode
+
+if __name__ == "__main__":
+    with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as executor:
+        results = list(executor.map(scan_group, range(WORKERS)))
+    raise SystemExit(2 if 2 in results else 1 if 1 in results else 0)
