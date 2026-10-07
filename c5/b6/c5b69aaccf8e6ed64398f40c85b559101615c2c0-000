@@ -1,0 +1,100 @@
+/Applications/Amphetamine.app/Contents/MacOS/Amphetamine
+/Applications/Antigravity.app/Contents/MacOS/Antigravity
+/Applications/Antigravity.app/Contents/Resources/app.asar
+/Applications/Blackmagic Proxy Generator.app/Contents/MacOS/Blackmagic Proxy Generator
+/Applications/ChatGPT.app/Contents/MacOS/ChatGPT
+/Applications/ChatGPT.app/Contents/Resources/app.asar
+/Applications/Claude Science.app/Contents/MacOS/ClaudeScience
+/Applications/Claude.app/Contents/MacOS/Claude
+/Applications/Claude.app/Contents/Resources/app.asar
+/Applications/ClaudeSync.app/Contents/MacOS/ClaudeSync
+/Applications/CrossOver.app/Contents/MacOS/CrossOver
+/Applications/CuaDriver.app/Contents/MacOS/cua-cursor-theme
+/Applications/CuaDriver.app/Contents/MacOS/cua-driver
+/Applications/Epic Games Launcher.app/Contents/MacOS/EpicGamesLauncher-Mac-Shipping
+/Applications/Font Book.app/Contents/MacOS/Font Book
+/Applications/GeForceNOW.app/Contents/MacOS/GeForceNOW
+/Applications/GeForceNOW.app/Contents/MacOS/GeForceNOWRelaunch
+/Applications/Ghostty.app/Contents/MacOS/ghostty
+/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+/Applications/Gyroflow.app/Contents/MacOS/gyroflow
+/Applications/Handy.app/Contents/MacOS/handy
+/Applications/Houdini Launcher.app/Contents/MacOS/houdini_installer
+/Applications/Houdini Launcher.app/Contents/MacOS/houdini_launcher
+/Applications/Logic Pro Creator Studio.app/Contents/MacOS/Logic Pro Creator Studio
+/Applications/MacWhisper.app/Contents/MacOS/MacWhisper
+/Applications/MacWhisper.app/Contents/MacOS/mw
+/Applications/Maccy.app/Contents/MacOS/Maccy
+/Applications/Malwarebytes.app/Contents/MacOS/Malwarebytes
+/Applications/Microsoft Teams.app/Contents/MacOS/MSTeams
+/Applications/Mounty.app/Contents/MacOS/Mounty
+/Applications/Notion.app/Contents/MacOS/Notion
+/Applications/Notion.app/Contents/Resources/app.asar
+/Applications/OBS.app/Contents/MacOS/OBS
+/Applications/OBS.app/Contents/MacOS/obs-ffmpeg-mux
+/Applications/Pika.app/Contents/MacOS/Pika
+/Applications/QLMarkdown.app/Contents/MacOS/QLMarkdown
+/Applications/REAPER.app/Contents/MacOS/REAPER
+/Applications/Safari.app/Contents/MacOS/Safari
+/Applications/Safari.app/Contents/MacOS/SafariForWebKitDevelopment
+/Applications/Spotify.app/Contents/MacOS/Spotify
+/Applications/Spotify.app/Contents/MacOS/crashpad_handler
+/Applications/Spotify.app/Contents/MacOS/save-to-spotify
+/Applications/Spotify.app/Contents/MacOS/sp_relauncher
+/Applications/Spotify.app/Contents/MacOS/spotify_cli
+/Applications/Steam.app/Contents/MacOS/steam.sh
+/Applications/Steam.app/Contents/MacOS/steam_osx
+/Applications/TRex.app/Contents/MacOS/TRex
+/Applications/VLC.app/Contents/MacOS/VLC
+/Applications/WD Discovery/WD Discovery.app/Contents/MacOS/WD Discovery
+/Applications/WD Discovery/WD Discovery.app/Contents/WDTrashObserver
+/Applications/WD Drive Utilities Uninstaller.app/Contents/MacOS/WD Drive Utilities Installer
+/Applications/WD Drive Utilities.app/Contents/MacOS/WD Drive Utilities
+/Applications/Wacom Tablet.localized/.Tablet/TabletDriver.app/Contents/MacOS/TabletDriver
+/Applications/Wave.app/Contents/MacOS/Wave
+/Applications/Wave.app/Contents/Resources/app.asar
+/Applications/WhatsApp.app/Contents/MacOS/WhatsApp
+/Applications/Xcode.app/Contents/MacOS/Xcode
+/Applications/ZenRayCloud.app/Contents/MacOS/ZenRayCloud
+/Applications/ZenRayCloud.app/Contents/Resources/app.asar
+/Applications/qbittorrent.app/Contents/MacOS/qbittorrent
+/Library/Application Support/Malwarebytes/MBAM/Engine.bundle/Contents/PlugIns/FrontendAgent.app/Contents/MacOS/FrontendAgent
+/Library/Application Support/Malwarebytes/MBAM/Engine.bundle/Contents/PlugIns/RTProtectionDaemon.app/Contents/MacOS/RTProtectionDaemon
+/Library/Application Support/Malwarebytes/MBAM/Engine.bundle/Contents/PlugIns/SettingsDaemon.app/Contents/MacOS/SettingsDaemon
+/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app/Contents/MacOS/Microsoft Update Assistant.app/Contents/MacOS/Microsoft Update Assistant
+/Library/Logs/com.sidefx.com/sesinetd.log
+/Library/Preferences/sesi/hserver/hserver
+/Library/Preferences/sesi/sesinetd
+/Library/PrivilegedHelperTools/Wacom_IOManager.app/Contents/MacOS/Wacom_IOManager
+/Library/PrivilegedHelperTools/com.crystalidea.macsfancontrol.smcwrite
+/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper
+/Library/PrivilegedHelperTools/com.wacom.DataStoreMgr.app/Contents/MacOS/com.wacom.DataStoreMgr
+/Library/PrivilegedHelperTools/com.wacom.UpdateHelper.app/Contents/MacOS/com.wacom.UpdateHelper
+/Library/PrivilegedHelperTools/io.macfuse.app.launchservice.daemon
+/Users/zenray/.claude/Scripts/publish-session-backup.py
+/Users/zenray/.claude/Scripts/session-backup.py
+/Users/zenray/.claude/autoupdate.mjs
+/Users/zenray/.hermes/node/bin/node
+/Users/zenray/.local/bin/cmd6-path-copy.sh
+/Users/zenray/Applications/CrossOver-winevideo.app/Contents/MacOS/CrossOver
+/Users/zenray/Applications/DAVE THE DIVER.app/Contents/MacOS/run.sh
+/Users/zenray/Applications/Disco Elysium.app/Contents/MacOS/run.sh
+/Users/zenray/Applications/DualSenseBattery.app/Contents/MacOS/DualSenseBattery
+/Users/zenray/Applications/Macs Fan Control.app/Contents/MacOS/Macs Fan Control
+/Users/zenray/Applications/SF Symbols.app/Contents/MacOS/SF Symbols
+/Users/zenray/Applications/SleepShutdown.app/Contents/MacOS/SleepShutdown
+/Users/zenray/Applications/ZenRayCloud.app/Contents/MacOS/ZenRayCloud
+/Users/zenray/Applications/ZenRayCloud.app/Contents/Resources/app.asar
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/relay/journal-relay.mjs
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/scripts/Assets/Daemon.mjs
+/Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/scripts/Freelance/Main.mjs
+/Users/zenray/Create/Build/Productions/GithubProductions/claude-sync/conversations-backup/backup.sh
+/Users/zenray/Create/Build/Productions/GithubProductions/claude-sync/sessions-sync/sessions-sync.sh
+/Users/zenray/Create/Build/Productions/GithubProductions/claude-sync/skills-sync/skills-sync.sh
+/Users/zenray/Library/Application Support/Google/GoogleUpdater/Current/GoogleUpdater.app/Contents/MacOS/GoogleUpdater
+/Users/zenray/Library/Application Support/Steam/SteamApps/steamclean
+/bin/bash
+/bin/sh
+/opt/homebrew/Cellar/node/26.0.0/bin/node
+/opt/homebrew/bin/node
+/usr/bin/python3
